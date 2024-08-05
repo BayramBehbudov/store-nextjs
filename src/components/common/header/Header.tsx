@@ -7,12 +7,18 @@ interface IHeader {}
 
 const Header: React.FC = (): JSX.Element => {
    return (
-      <header className="container flex h-[80px] min-h-fit items-center justify-between pr-10">
-         <Image alt="logo" className="flex cursor-pointer items-center" width={200} height={200} src="/logo.svg" />
+      <header className=" container flex h-[80px] items-center justify-between ">
+         <Image
+            alt="logo"
+            className="flex cursor-pointer items-center sm:w-[150px]"
+            width={200}
+            height={200}
+            src="/logo.svg"
+         />
          <div className="h-full md:hidden">
             <Navbar className="h-full items-center" />
          </div>
-         <div className="h-full md:hidden">
+         <div className="h-full">
             <Icons />
          </div>
          <div className="hidden md:block">

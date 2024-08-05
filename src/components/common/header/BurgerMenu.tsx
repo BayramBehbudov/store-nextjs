@@ -8,16 +8,13 @@ const burger: React.FC = (): JSX.Element => {
    return (
       <Sheet>
          <SheetTrigger className="flex h-full items-center">
-            <GiHamburgerMenu size={25} color="#720498" />
+            <GiHamburgerMenu size={35} color="#720498" />
          </SheetTrigger>
-         <SheetContent>
+         <SheetContent className='border-none'>
             <SheetHeader>
                <SheetTitle></SheetTitle>
                <SheetDescription></SheetDescription>
             </SheetHeader>
-            <div className="mb-[60px]">
-               <Icons />
-            </div>
             <Navbar className="flex-col gap-2" />
          </SheetContent>
       </Sheet>

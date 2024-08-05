@@ -21,7 +21,7 @@ const Banner: React.FC = (): JSX.Element => {
    }, [banner]);
 
    return (
-      <div className="flex h-14 items-center justify-center bg-[#F7F7F7]">
+      <div className="flex h-14 items-center justify-center bg-[#F7F7F7] sm:hidden">
          <div className="container w-fit animate-rotate-x text-[#60DA00] animate-duration-[3000ms] animate-infinite">
             {banners[banner]}
          </div>
