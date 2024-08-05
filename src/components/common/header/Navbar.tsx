@@ -12,7 +12,7 @@ const Navbar: React.FC<IClassName> = ({ className }): JSX.Element => {
 
    const navItems = ['Novidades', 'Sneakers', 'Streetwear', 'Fitness Wear', 'Activewear', 'Tecno Wear', 'Eyewear'];
    return (
-      <nav className="relative flex h-full w-fit flex-col items-center bg-black md:h-fit sm:flex-row ">
+      <nav className="relative flex h-full w-fit flex-col items-center  md:h-fit sm:flex-row ">
          <div className={`flex ${className}`}>
             {navItems.map((item) => (
                <Link
