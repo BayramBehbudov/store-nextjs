@@ -1,5 +1,5 @@
 
-# Welcome to My Online Store Repository
+# Welcome to My Single Page Repository
 
 ## About This Project
 This single page street style site was created with NextJs Typescript and Tailwind.
