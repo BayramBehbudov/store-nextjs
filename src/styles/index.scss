@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html,
+   body {
+      @apply h-full;
+   }
+   main {
+      @apply flex-[1_1_auto];
+   }
+
+   .container {
+      @apply max-w-[1200px];
+   }
+   .wrapper {
+      @apply flex min-h-full flex-col;
+   }
+}
+
+::-webkit-scrollbar {
+   height: 4px;
+   width: 0;
+}
+
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #e01a1a;
+   border-radius: 10px;
+}
