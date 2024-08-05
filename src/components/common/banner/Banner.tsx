@@ -5,7 +5,6 @@ interface IBanner {}
 
 const Banner: React.FC = (): JSX.Element => {
    const [banner, setBanner] = useState(0);
-   console.log(banner);
 
    const banners = [
       'Shop the Latest Trends Online – Fashion Delivered Right to Your Door!',
@@ -16,16 +15,15 @@ const Banner: React.FC = (): JSX.Element => {
 
    useEffect(() => {
       const timer = setTimeout(() => {
-         setBanner(banner === banners.length - 1 ? 0 : banner + 1);
+         setBanner(banner === 3 ? 0 : banner + 1);
       }, 3000);
       return () => clearTimeout(timer);
    }, [banner]);
 
    return (
       <div className="flex h-14 items-center justify-center bg-[#F7F7F7]">
-         <div className="container w-fit animate-rotate-x animate-duration-[3000ms] animate-infinite text-[#60DA00]">
+         <div className="container w-fit animate-rotate-x text-[#60DA00] animate-duration-[3000ms] animate-infinite">
             {banners[banner]}
-            
          </div>
       </div>
    );

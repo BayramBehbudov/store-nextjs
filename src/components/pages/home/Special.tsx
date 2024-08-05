@@ -7,7 +7,7 @@ const Special: React.FC = (): JSX.Element => {
    return (
       <div className="flex w-full justify-between gap-10 overflow-scroll pb-4 sm:justify-start">
          {items.map((item) => (
-            <div className="h-auto w-[300px]">
+            <div className="h-auto w-[300px]" key={item}>
                <Image src={`/special/special${item}.svg`} alt="img" width={300} height={300} className=' min-w-[300px]'/>
                <div className="mt-4 flex flex-col gap-2">
                   <h2 className="w-full font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
