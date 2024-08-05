@@ -1,7 +1,6 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@ui/sheet';
 import Navbar from './Navbar';
-import Icons from './Icons';
 interface Iburger {}
 
 const burger: React.FC = (): JSX.Element => {
@@ -10,7 +9,7 @@ const burger: React.FC = (): JSX.Element => {
          <SheetTrigger className="flex h-full items-center">
             <GiHamburgerMenu size={35} color="#720498" />
          </SheetTrigger>
-         <SheetContent className='border-none'>
+         <SheetContent className="border-none">
             <SheetHeader>
                <SheetTitle></SheetTitle>
                <SheetDescription></SheetDescription>
